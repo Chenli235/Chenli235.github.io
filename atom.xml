@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-26T20:33:58.771Z</updated>
+    <updated>2020-03-26T21:31:39.858Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -10,6 +10,31 @@
     <logo>https://chenli235.github.io/images/avatar.png</logo>
     <icon>https://chenli235.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Chen Li</rights>
+    <entry>
+        <title type="html"><![CDATA[Assessing microscope image focus quality with deep learning]]></title>
+        <id>https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/</id>
+        <link href="https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/">
+        </link>
+        <updated>2020-03-26T09:02:25.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
+<h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
+<p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
+The advantage of the proposed method</p>
+<ol>
+<li>just need dataset of good image and different degree of unfocus images.</li>
+<li>we can generate dataset of different level of focus quality by moving focus distance.</li>
+<li>directly neural network and source code are provided in this article.</li>
+<li>the whole image can be divided into many small image pathes,  which accelerate the training speed.</li>
+</ol>
+<h1 id="implementation">Implementation</h1>
+<ol>
+<li>Create an dataset of images consisting of both infocus and out of focus images of U2OS cancer cells with Hoechst stain.</li>
+<li>Then defocus the infocus images by applying a convolution with the PSF(point spread function) by varying z in 2um increments.</li>
+</ol>
+<p>J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.<br>
+3.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[test]]></title>
         <id>https://chenli235.github.io/post/test/</id>

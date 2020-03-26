@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>test | Chen Li</title>
+<title>Assessing microscope image focus quality with deep learning | Chen Li</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,38 +18,12 @@
 
 
 
-    <meta name="description" content="test
-this is the websiteclick this
+    <meta name="description" content="
+intereting paper about assessing microscope image quality
+this is the paper
+The advantage of the proposed method
 
-abc
-bcd
-cde
-def
-
-
-abc
-bcd
-cde
-def
-
-
-try this
-
-
-
-try this
-
-
-
-
-
-try this
-
-
-
-
-
-try this..." />
+just ..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -121,67 +95,36 @@ try this..." />
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">test</h2>
-            <div class="post-date">2020-03-19</div>
-            
-              <div class="feature-container" style="background-image: url('https://chenli235.github.io/post-images/test.jpg')">
-              </div>
+            <h2 class="post-title">Assessing microscope image focus quality with deep learning</h2>
+            <div class="post-date">2020-03-26</div>
             
             <div class="post-content" v-pre>
-              <p>test<br>
-this is the website<a href="https://www.baidu.com">click this</a></p>
-<ul>
-<li>abc</li>
-<li>bcd</li>
-<li>cde</li>
-<li>def</li>
-</ul>
+              <figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
+<h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
+<p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
+The advantage of the proposed method</p>
 <ol>
-<li>abc</li>
-<li>bcd</li>
-<li>cde</li>
-<li>def</li>
+<li>just need dataset of good image and different degree of unfocus images.</li>
+<li>we can generate dataset of different level of focus quality by moving focus distance.</li>
+<li>directly neural network and source code are provided in this article.</li>
+<li>the whole image can be divided into many small image pathes,  which accelerate the training speed.</li>
 </ol>
-<blockquote>
-<p>try this</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-<hr>
-<p>try <code>html</code></p>
-<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
-    print('Hello world.')
-
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smartest-dog-breeds-1553287693.jpg?crop=0.846xw:0.843xh;0.0994xw,0.0511xh&amp;resize=980:*" alt="dog" title="big dog" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585254686367.jfif" alt="another dog" loading="lazy"></figure>
+<h1 id="implementation">Implementation</h1>
+<ol>
+<li>Create an dataset of images consisting of both infocus and out of focus images of U2OS cancer cells with Hoechst stain.</li>
+<li>Then defocus the infocus images by applying a convolution with the PSF(point spread function) by varying z in 2um increments.</li>
+</ol>
+<p>J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.<br>
+3.</p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://chenli235.github.io/post/about/">
+                <a href="https://chenli235.github.io/post/test/">
                   <h3 class="post-title">
-                    About me
+                    test
                   </h3>
                 </a>
               </div>
