@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-26T21:31:39.858Z</updated>
+    <updated>2020-03-26T21:36:40.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/</id>
         <link href="https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/">
         </link>
-        <updated>2020-03-26T09:02:25.000Z</updated>
+        <updated>2020-03-25T21:02:25.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
 <h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
 <p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
@@ -29,10 +29,12 @@ The advantage of the proposed method</p>
 <h1 id="implementation">Implementation</h1>
 <ol>
 <li>Create an dataset of images consisting of both infocus and out of focus images of U2OS cancer cells with Hoechst stain.</li>
-<li>Then defocus the infocus images by applying a convolution with the PSF(point spread function) by varying z in 2um increments.</li>
+<li>Then defocus the infocus images by applying a convolution with the PSF(point spread function) by varying z in 2um increments.<br>
+<img src="https://chenli235.github.io/post-images/1585258360693.PNG" alt="PSF" loading="lazy"><br>
+J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.</li>
+<li>Apply Poisson noise, accounting for sensor offset.</li>
+<li>Randomly pick 84<em>84 image crops of the 696</em>520 original size image for training, for each patch, has 11 defocus levels.</li>
 </ol>
-<p>J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.<br>
-3.</p>
 ]]></content>
     </entry>
     <entry>
