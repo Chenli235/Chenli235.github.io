@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T02:03:43.309Z</updated>
+    <updated>2020-03-27T02:11:20.963Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,10 +15,10 @@
         <id>https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/</id>
         <link href="https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/">
         </link>
-        <updated>2020-03-25T01:34:17.000Z</updated>
+        <updated>2020-03-24T13:34:17.000Z</updated>
         <content type="html"><![CDATA[<h1 id="hardware-setup">Hardware setup</h1>
 <center class = "half">
-        <img src ="file://C:/Users/ische/Documents/Gridea/post-images/1585272993095.PNG" width="300"><img src = "file://C:/Users/ische/Documents/Gridea/post-images/1585273628791.PNG" width="300">
+    <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smartest-dog-breeds-1553287693.jpg?crop=0.846xw:0.843xh;0.0994xw,0.0511xh&resize=980:*" width="100"/><img src = "https://www.sciencealert.com/images/2020-03/processed/010-pomeranian_1024.jpg" width="100"/>
 </center>
 <p><img src="https://chenli235.github.io/post-images/1585272993095.PNG" alt="" loading="lazy"><br>
 <img src="https://chenli235.github.io/post-images/1585273628791.PNG" alt="" loading="lazy"></p>
