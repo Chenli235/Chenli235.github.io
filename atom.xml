@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T02:48:16.660Z</updated>
+    <updated>2020-03-27T04:25:52.867Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -79,7 +79,7 @@ it is due to the light bleaching and scattering.</li>
         <id>https://chenli235.github.io/post/about/</id>
         <link href="https://chenli235.github.io/post/about/">
         </link>
-        <updated>2019-01-23T07:09:48.000Z</updated>
+        <updated>2019-01-22T18:09:48.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
 <p>Welcome to my blog, nice to meet you here.</p>
 </blockquote>

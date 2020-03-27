@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585277293579">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585283149494">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -37,7 +43,7 @@ it is due ..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1585277293579" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1585283149494" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -60,7 +66,7 @@ it is due ..." />
       
         
           <a href="/tags" class="site-nav">
-            Data
+            Tags
           </a>
         
       
@@ -142,6 +148,12 @@ it is due to the light bleaching and scattering.</li>
             
 
             
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
 
           </div>
 
@@ -169,6 +181,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'd2a8489c96613f28aa5f',
+        clientSecret: '2605f187ceaf8ae8d09cb2447b44dd63b6178a01',
+        repo: 'chenli235.github.io',
+        owner: 'Chenli235',
+        admin: ['Chenli235'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
