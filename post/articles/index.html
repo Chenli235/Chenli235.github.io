@@ -1,22 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://chenli235.github.io</id>
-    <title>Chen Li</title>
-    <updated>2020-03-27T01:25:02.299Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://chenli235.github.io"/>
-    <link rel="self" href="https://chenli235.github.io/atom.xml"/>
-    <subtitle>UNC &amp; NCSU Biomedical Imaging Lab</subtitle>
-    <logo>https://chenli235.github.io/images/avatar.png</logo>
-    <icon>https://chenli235.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Chen Li</rights>
-    <entry>
-        <title type="html"><![CDATA[Assessing microscope image focus quality with deep learning]]></title>
-        <id>https://chenli235.github.io/post/articles/</id>
-        <link href="https://chenli235.github.io/post/articles/">
-        </link>
-        <updated>2020-03-23T21:02:25.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Assessing microscope image focus quality with deep learning | Chen Li</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585272299292">
+<link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+intereting paper about assessing microscope image quality
+this is the paper
+The advantage of the proposed method:
+
+Crea..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://chenli235.github.io">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1585272299292" class="site-logo">
+        <h1 class="site-title">Chen Li</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://chenli235.github.io" class="site-nav">
+            main
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            articles
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            Data
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            About me
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      UNC & NCSU Biomedical Imaging Lab
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://chenli235.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Assessing microscope image focus quality with deep learning</h2>
+            <div class="post-date">2020-03-23</div>
+            
+            <div class="post-content" v-pre>
+              <figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
 <h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
 <p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
 The advantage of the proposed method:</p>
@@ -48,52 +131,51 @@ Prediction of absolute focus quality on an unseen cell type (MCF-7 cells, from B
 <figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585268654621.PNG" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="3"><img src="https://chenli235.github.io/post-images/1585268819733.PNG" alt="" loading="lazy"></figure>
 <p>From the result, we can get the conclusion that on images patch that have shape edges, the prediction looks good but if the signal is too strong or protein material, it may predict as a out-of-focus image.</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[About me]]></title>
-        <id>https://chenli235.github.io/post/about/</id>
-        <link href="https://chenli235.github.io/post/about/">
-        </link>
-        <updated>2019-01-23T20:09:48.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>Welcome to my blog, nie cto meet you here.</p>
-</blockquote>
-<h2 id="i-am-a-phd-student-in-unc-ncsu-state-joint-department-of-biomedical-engineering-my-research-area-is-medical-imging-and-microscope-design">🏠 I am a PhD student in UNC &amp; NCSU State joint Department of  Biomedical Engineering. My research area is medical imging and microscope design.</h2>
-<h2 id="i-would-like-to-share-my-project-and-papers-i-read">👨‍💻 I would like to share my project and papers I read.</h2>
-<h2 id="contact-info-cli38ncsueducom">📬 Contact info: cli38@ncsu.edu.com</h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://chenli235.github.io/post/hello-gridea/</id>
-        <link href="https://chenli235.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://chenli235.github.io/post/about/">
+                  <h3 class="post-title">
+                    About me
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
