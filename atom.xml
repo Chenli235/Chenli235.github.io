@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T02:24:00.416Z</updated>
+    <updated>2020-03-27T02:39:43.106Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -10,31 +10,6 @@
     <logo>https://chenli235.github.io/images/avatar.png</logo>
     <icon>https://chenli235.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Chen Li</rights>
-    <entry>
-        <title type="html"><![CDATA[Mouse brain image using light sheet microscope]]></title>
-        <id>https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/</id>
-        <link href="https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/">
-        </link>
-        <updated>2020-03-23T13:34:17.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="hardware-setup">Hardware setup</h1>
-<p><img src="https://chenli235.github.io/post-images/1585272993095.PNG" alt="" loading="lazy"><br>
-<img src="https://chenli235.github.io/post-images/1585273628791.PNG" alt="" loading="lazy"></p>
-<h1 id="mouse-brain-image">Mouse brain image</h1>
-<p><img src="https://chenli235.github.io/post-images/1585275613220.PNG" alt="" loading="lazy"><br>
-some common problem with light sheet microscope</p>
-<ol>
-<li>
-<p>Intensity discontinuity</p>
-</li>
-<li>
-<p>Light Peneration issues (when only one light path)</p>
-</li>
-<li></li>
-</ol>
-<h1 id="end">end</h1>
-<p>it is my first experience with light sheet microscope, and I know the quality of image is not good enough. I will try different ways to improve the image quality and processing speed.</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Assessing microscope image focus quality with deep learning]]></title>
         <id>https://chenli235.github.io/post/articles/</id>
@@ -73,6 +48,30 @@ Prediction of absolute focus quality on an unseen cell type (MCF-7 cells, from B
 <figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585268654621.PNG" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="3"><img src="https://chenli235.github.io/post-images/1585268819733.PNG" alt="" loading="lazy"></figure>
 <p>From the result, we can get the conclusion that on images patch that have shape edges, the prediction looks good but if the signal is too strong or protein material, it may predict as a out-of-focus image.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mouse brain image using light sheet microscope]]></title>
+        <id>https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/</id>
+        <link href="https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/">
+        </link>
+        <updated>2020-03-22T01:34:17.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="hardware-setup">Hardware setup</h1>
+<p><img src="https://chenli235.github.io/post-images/1585272993095.PNG" alt="" loading="lazy"><br>
+<img src="https://chenli235.github.io/post-images/1585273628791.PNG" alt="" loading="lazy"></p>
+<h1 id="mouse-brain-image">Mouse brain image</h1>
+<p><img src="https://chenli235.github.io/post-images/1585275613220.PNG" alt="" loading="lazy"><br>
+some common problem with light sheet microscope</p>
+<ol>
+<li>Intensity discontinuity<br>
+<img src="https://chenli235.github.io/post-images/1585275853344.PNG" alt="" loading="lazy"><br>
+it is due to the light bleaching and scattering.</li>
+<li>Light Peneration issues (when using only one light path)<br>
+<img src="https://chenli235.github.io/post-images/1585275983813.PNG" alt="" loading="lazy"><br>
+<img src="https://chenli235.github.io/post-images/1585276033521.PNG" alt="" loading="lazy"></li>
+</ol>
+<h1 id="end">end</h1>
+<p>it is my first experience with light sheet microscope, and I know the quality of image is not good enough. I will try different ways to improve the image quality and processing speed.</p>
 ]]></content>
     </entry>
     <entry>
