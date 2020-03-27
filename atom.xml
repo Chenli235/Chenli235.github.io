@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T02:40:38.739Z</updated>
+    <updated>2020-03-27T02:43:02.449Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -79,12 +79,12 @@ it is due to the light bleaching and scattering.</li>
         <id>https://chenli235.github.io/post/about/</id>
         <link href="https://chenli235.github.io/post/about/">
         </link>
-        <updated>2019-01-23T20:09:48.000Z</updated>
+        <updated>2019-01-23T07:09:48.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
-<p>Welcome to my blog, nie cto meet you here.</p>
+<p>Welcome to my blog, nice to meet you here.</p>
 </blockquote>
 <h2 id="i-am-a-phd-student-in-unc-ncsu-state-joint-department-of-biomedical-engineering-my-research-area-is-medical-imging-and-microscope-design">🏠 I am a PhD student in UNC &amp; NCSU State joint Department of  Biomedical Engineering. My research area is medical imging and microscope design.</h2>
-<h2 id="i-would-like-to-share-my-project-and-papers-i-read">👨‍💻 I would like to share my project and papers I read.</h2>
+<h2 id="i-would-like-to-share-my-project-and-interesting-papers-i-read">👨‍💻 I would like to share my project and interesting papers I read.</h2>
 <h2 id="contact-info-cli38ncsueducom">📬 Contact info: cli38@ncsu.edu.com</h2>
 ]]></content>
     </entry>
