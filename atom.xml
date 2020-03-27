@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T05:39:00.148Z</updated>
+    <updated>2020-03-27T05:41:11.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/journal-club2-deconvolution-of-light-sheet-microscopy-recordings/</id>
         <link href="https://chenli235.github.io/post/journal-club2-deconvolution-of-light-sheet-microscopy-recordings/">
         </link>
-        <updated>2020-03-24T04:37:00.000Z</updated>
+        <updated>2020-03-23T16:37:00.000Z</updated>
         <content type="html"><![CDATA[<p>This paper can be found in <a href="https://www.nature.com/articles/s41598-019-53875-y">there</a></p>
 <h1 id="introduction-of-psf">Introduction of PSF</h1>
 <p><img src="https://chenli235.github.io/post-images/1585286735808.PNG" alt="" loading="lazy"><br>
@@ -28,7 +28,7 @@ The PSF function can be measured in two ways:</p>
 <h1 id="the-deconvolutiong-algorithm">The deconvolutiong algorithm</h1>
 <p>Deconvolution is a mathematical operation used in Image Restoration to recover an image that is degraded by a process than can be described with a Convolution.<br>
 <img src="https://chenli235.github.io/post-images/1585284966915.PNG" alt="" loading="lazy"><br>
-the algorithm they use is ichardson–Lucy algorithm.</p>
+The algorithm they use is Richardson–Lucy algorithm.</p>
 <h1 id="result-from-the-paper">Result from the paper</h1>
 <figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585286234203.PNG" alt="" loading="lazy"></figure>
 <h1 id="advantages">Advantages</h1>
@@ -39,7 +39,7 @@ the algorithm they use is ichardson–Lucy algorithm.</p>
 </ol>
 <h1 id="result-from-cleared-bone-data">Result from cleared bone data</h1>
 <p><img src="https://chenli235.github.io/post-images/1585285215106.PNG" alt="single image" title="single image Left: raw image, Right: deconv image" loading="lazy">single image Left: raw image, Right: deconv image</div><br>
-<img src="https://chenli235.github.io/post-images/1585286009835.PNG" alt="z projection image" loading="lazy">z projection image Left: raw Right: deconv</div></p>
+<img src="https://chenli235.github.io/post-images/1585286009835.PNG" alt="z projection image" loading="lazy">z projection image Left: raw imageRight: deconv image</div></p>
 <p>From the result, we notice that when using on one single image, the image will show some pepper noise due to the magnifing of noises, however, we apply the algorithm on whole z-stack and get the z-projection image, the noises will be averaged and gone.</p>
 <h1 id="refrence">Refrence</h1>
 <blockquote>

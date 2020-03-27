@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585287535684">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585287666283">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -37,7 +37,7 @@ The image formation is described above. the microscope image can b..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1585287535684" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1585287666283" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -100,7 +100,7 @@ The image formation is described above. the microscope image can b..." />
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Journal club2: Deconvolution of light sheet microscopy recordings</h2>
-            <div class="post-date">2020-03-24</div>
+            <div class="post-date">2020-03-23</div>
             
             <div class="post-content" v-pre>
               <p>This paper can be found in <a href="https://www.nature.com/articles/s41598-019-53875-y">there</a></p>
@@ -115,7 +115,7 @@ The PSF function can be measured in two ways:</p>
 <h1 id="the-deconvolutiong-algorithm">The deconvolutiong algorithm</h1>
 <p>Deconvolution is a mathematical operation used in Image Restoration to recover an image that is degraded by a process than can be described with a Convolution.<br>
 <img src="https://chenli235.github.io/post-images/1585284966915.PNG" alt="" loading="lazy"><br>
-the algorithm they use is ichardson–Lucy algorithm.</p>
+The algorithm they use is Richardson–Lucy algorithm.</p>
 <h1 id="result-from-the-paper">Result from the paper</h1>
 <figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585286234203.PNG" alt="" loading="lazy"></figure>
 <h1 id="advantages">Advantages</h1>
@@ -126,7 +126,7 @@ the algorithm they use is ichardson–Lucy algorithm.</p>
 </ol>
 <h1 id="result-from-cleared-bone-data">Result from cleared bone data</h1>
 <p><img src="https://chenli235.github.io/post-images/1585285215106.PNG" alt="single image" title="single image Left: raw image, Right: deconv image" loading="lazy">single image Left: raw image, Right: deconv image</div><br>
-<img src="https://chenli235.github.io/post-images/1585286009835.PNG" alt="z projection image" loading="lazy">z projection image Left: raw Right: deconv</div></p>
+<img src="https://chenli235.github.io/post-images/1585286009835.PNG" alt="z projection image" loading="lazy">z projection image Left: raw imageRight: deconv image</div></p>
 <p>From the result, we notice that when using on one single image, the image will show some pepper noise due to the magnifing of noises, however, we apply the algorithm on whole z-stack and get the z-projection image, the noises will be averaged and gone.</p>
 <h1 id="refrence">Refrence</h1>
 <blockquote>
