@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T01:29:51.688Z</updated>
+    <updated>2020-03-27T01:46:53.055Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://chenli235.github.io/images/avatar.png</logo>
     <icon>https://chenli235.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Chen Li</rights>
+    <entry>
+        <title type="html"><![CDATA[Mouse brain image using light sheet microscope]]></title>
+        <id>https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/</id>
+        <link href="https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/">
+        </link>
+        <updated>2020-03-26T13:34:17.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="hardware-setup">Hardware setup</h1>
+<figure class = "half">
+    ![](https://chenli235.github.io/post-images/1585272993095.PNG)
+</figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Assessing microscope image focus quality with deep learning]]></title>
         <id>https://chenli235.github.io/post/articles/</id>
