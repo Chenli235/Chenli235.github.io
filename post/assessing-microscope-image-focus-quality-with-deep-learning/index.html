@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585258597266">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585267293534">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -33,7 +33,7 @@ just ..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1585258597266" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1585267293534" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -116,8 +116,14 @@ The advantage of the proposed method</p>
 <img src="https://chenli235.github.io/post-images/1585258360693.PNG" alt="PSF" loading="lazy"><br>
 J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.</li>
 <li>Apply Poisson noise, accounting for sensor offset.</li>
-<li>Randomly pick 84<em>84 image crops of the 696</em>520 original size image for training, for each patch, has 11 defocus levels.</li>
+<li>Randomly pick 84 * 84 image crops of the 696 * 520 original size image for training, for each patch, has 11 defocus levels.<br>
+<img src="https://chenli235.github.io/post-images/1585260331255.PNG" alt="good image and defocused image" loading="lazy"></li>
 </ol>
+<p>the neural network model architecture and some of the result<br>
+<a href="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-018-2087-4/MediaObjects/12859_2018_2087_Fig2_HTML.gif?as=webp"></a><br>
+The patch outlines have one of 11 hues denoting the predicted defocus level and increasing lightness denoting increased certainty.</p>
+<p>\times<br>
+\pm \times \div \mid</p>
 
             </div>
             
