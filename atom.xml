@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T00:25:54.338Z</updated>
+    <updated>2020-03-27T01:22:34.259Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/</id>
         <link href="https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/">
         </link>
-        <updated>2020-03-24T21:02:25.000Z</updated>
+        <updated>2020-03-24T09:02:25.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
 <h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
 <p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
@@ -46,59 +46,8 @@ The patch outlines have one of 11 hues denoting the predicted defocus level and 
 Prediction of absolute focus quality on an unseen cell type (MCF-7 cells, from BBBC021 dataset [12]) and unseen stain, Tubulin, using our Fiji (ImageJ) [20] plugin with pre-trained TensorFlow model. A composite image montage was assembled using the center 84 × 84 patch from a randomly selected batch of 240 images. The border hues denote predicted defocus levels (red for best focus), while the lightness denotes prediction certainty.</p>
 <h1 id="check-the-mouse-brain-image-using-the-imagej-plugin">Check the mouse brain image using the imageJ plugin</h1>
 <figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585268654621.PNG" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[test]]></title>
-        <id>https://chenli235.github.io/post/test/</id>
-        <link href="https://chenli235.github.io/post/test/">
-        </link>
-        <updated>2020-03-19T05:12:23.000Z</updated>
-        <content type="html"><![CDATA[<p>test<br>
-this is the website<a href="https://www.baidu.com">click this</a></p>
-<ul>
-<li>abc</li>
-<li>bcd</li>
-<li>cde</li>
-<li>def</li>
-</ul>
-<ol>
-<li>abc</li>
-<li>bcd</li>
-<li>cde</li>
-<li>def</li>
-</ol>
-<blockquote>
-<p>try this</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>try this</p>
-</blockquote>
-<hr>
-<p>try <code>html</code></p>
-<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
-    print('Hello world.')
-
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smartest-dog-breeds-1553287693.jpg?crop=0.846xw:0.843xh;0.0994xw,0.0511xh&amp;resize=980:*" alt="dog" title="big dog" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585254686367.jfif" alt="another dog" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://chenli235.github.io/post-images/1585268819733.PNG" alt="" loading="lazy"></figure>
+<p>From the result, we can get the conclusion that on images patch that have shape edges, the prediction looks good but if the signal is too strong or protein material, it may predict as a out-of-focus image.</p>
 ]]></content>
     </entry>
     <entry>
@@ -106,14 +55,13 @@ this is the website<a href="https://www.baidu.com">click this</a></p>
         <id>https://chenli235.github.io/post/about/</id>
         <link href="https://chenli235.github.io/post/about/">
         </link>
-        <updated>2019-01-24T09:09:48.000Z</updated>
+        <updated>2019-01-23T20:09:48.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+<p>Welcome to my blog, nie cto meet you here.</p>
 </blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="contact-info">📬 Contact info</h2>
+<h2 id="i-am-a-phd-student-in-unc-ncsu-state-joint-department-of-biomedical-engineering-my-research-area-is-medical-imging-and-microscope-design">🏠 I am a PhD student in UNC &amp; NCSU State joint Department of  Biomedical Engineering. My research area is medical imging and microscope design.</h2>
+<h2 id="i-would-like-to-share-my-project-and-papers-i-read">👨‍💻 I would like to share my project and papers I read.</h2>
+<h2 id="contact-info-cli38ncsueducom">📬 Contact info: cli38@ncsu.edu.com</h2>
 ]]></content>
     </entry>
     <entry>
