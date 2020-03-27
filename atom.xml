@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T02:11:20.963Z</updated>
+    <updated>2020-03-27T02:13:15.118Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,13 +15,15 @@
         <id>https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/</id>
         <link href="https://chenli235.github.io/post/mouse-brain-image-using-light-sheet-microscope/">
         </link>
-        <updated>2020-03-24T13:34:17.000Z</updated>
+        <updated>2020-03-24T01:34:17.000Z</updated>
         <content type="html"><![CDATA[<h1 id="hardware-setup">Hardware setup</h1>
 <center class = "half">
     <img src ="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/smartest-dog-breeds-1553287693.jpg?crop=0.846xw:0.843xh;0.0994xw,0.0511xh&resize=980:*" width="100"/><img src = "https://www.sciencealert.com/images/2020-03/processed/010-pomeranian_1024.jpg" width="100"/>
 </center>
 <p><img src="https://chenli235.github.io/post-images/1585272993095.PNG" alt="" loading="lazy"><br>
 <img src="https://chenli235.github.io/post-images/1585273628791.PNG" alt="" loading="lazy"></p>
+<h1 id="end">end</h1>
+<p>it is my first experience with light sheet microscope, and I know the quality of image is not good enough. I will try different ways to improve the image quality and processing speed.</p>
 ]]></content>
     </entry>
     <entry>
