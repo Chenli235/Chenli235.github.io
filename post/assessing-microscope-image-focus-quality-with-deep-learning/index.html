@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585267293534">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1585268751328">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -21,9 +21,9 @@
     <meta name="description" content="
 intereting paper about assessing microscope image quality
 this is the paper
-The advantage of the proposed method
+The advantage of the proposed method:
 
-just ..." />
+Crea..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -33,7 +33,7 @@ just ..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1585267293534" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1585268751328" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -96,18 +96,20 @@ just ..." />
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Assessing microscope image focus quality with deep learning</h2>
-            <div class="post-date">2020-03-25</div>
+            <div class="post-date">2020-03-24</div>
             
             <div class="post-content" v-pre>
               <figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
 <h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
 <p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
-The advantage of the proposed method</p>
+The advantage of the proposed method:</p>
 <ol>
-<li>just need dataset of good image and different degree of unfocus images.</li>
+<li>Create dataset using only in-focus images, get out-of focus images by PSF.</li>
 <li>we can generate dataset of different level of focus quality by moving focus distance.</li>
 <li>directly neural network and source code are provided in this article.</li>
 <li>the whole image can be divided into many small image pathes,  which accelerate the training speed.</li>
+<li>the method has a imageJ plugin.</li>
+<li>Data augmentation to handle noises and offset images</li>
 </ol>
 <h1 id="implementation">Implementation</h1>
 <ol>
@@ -116,14 +118,17 @@ The advantage of the proposed method</p>
 <img src="https://chenli235.github.io/post-images/1585258360693.PNG" alt="PSF" loading="lazy"><br>
 J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.</li>
 <li>Apply Poisson noise, accounting for sensor offset.</li>
-<li>Randomly pick 84 * 84 image crops of the 696 * 520 original size image for training, for each patch, has 11 defocus levels.<br>
+<li>Randomly pick 84$\times<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>84</mn><mi>i</mi><mi>m</mi><mi>a</mi><mi>g</mi><mi>e</mi><mi>c</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>h</mi><mi>e</mi><mn>696</mn></mrow><annotation encoding="application/x-tex">84 image crops of the 696</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">8</span><span class="mord">4</span><span class="mord mathdefault">i</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">e</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">t</span><span class="mord mathdefault">h</span><span class="mord mathdefault">e</span><span class="mord">6</span><span class="mord">9</span><span class="mord">6</span></span></span></span>\times$520 original size image for training, for each patch, has 11 defocus levels.<br>
 <img src="https://chenli235.github.io/post-images/1585260331255.PNG" alt="good image and defocused image" loading="lazy"></li>
 </ol>
 <p>the neural network model architecture and some of the result<br>
 <a href="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-018-2087-4/MediaObjects/12859_2018_2087_Fig2_HTML.gif?as=webp"></a><br>
 The patch outlines have one of 11 hues denoting the predicted defocus level and increasing lightness denoting increased certainty.</p>
-<p>\times<br>
-\pm \times \div \mid</p>
+<h1 id="results">Results</h1>
+<p><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-018-2087-4/MediaObjects/12859_2018_2087_Fig7_HTML.gif?as=webp"></a><br>
+Prediction of absolute focus quality on an unseen cell type (MCF-7 cells, from BBBC021 dataset [12]) and unseen stain, Tubulin, using our Fiji (ImageJ) [20] plugin with pre-trained TensorFlow model. A composite image montage was assembled using the center 84 × 84 patch from a randomly selected batch of 240 images. The border hues denote predicted defocus levels (red for best focus), while the lightness denotes prediction certainty.</p>
+<h1 id="check-the-mouse-brain-image-using-the-imagej-plugin">Check the mouse brain image using the imageJ plugin</h1>
+<figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585268654621.PNG" alt="" loading="lazy"></figure>
 
             </div>
             

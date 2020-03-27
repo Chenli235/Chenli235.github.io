@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-03-27T00:01:43.922Z</updated>
+    <updated>2020-03-27T00:25:54.338Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,16 +15,18 @@
         <id>https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/</id>
         <link href="https://chenli235.github.io/post/assessing-microscope-image-focus-quality-with-deep-learning/">
         </link>
-        <updated>2020-03-25T09:02:25.000Z</updated>
+        <updated>2020-03-24T21:02:25.000Z</updated>
         <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://chenli235.github.io/post-images/1585256740222.PNG" alt="" loading="lazy"></figure>
 <h1 id="intereting-paper-about-assessing-microscope-image-quality">intereting paper about assessing microscope image quality</h1>
 <p>this is the <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2087-4">paper</a><br>
-The advantage of the proposed method</p>
+The advantage of the proposed method:</p>
 <ol>
-<li>just need dataset of good image and different degree of unfocus images.</li>
+<li>Create dataset using only in-focus images, get out-of focus images by PSF.</li>
 <li>we can generate dataset of different level of focus quality by moving focus distance.</li>
 <li>directly neural network and source code are provided in this article.</li>
 <li>the whole image can be divided into many small image pathes,  which accelerate the training speed.</li>
+<li>the method has a imageJ plugin.</li>
+<li>Data augmentation to handle noises and offset images</li>
 </ol>
 <h1 id="implementation">Implementation</h1>
 <ol>
@@ -33,14 +35,17 @@ The advantage of the proposed method</p>
 <img src="https://chenli235.github.io/post-images/1585258360693.PNG" alt="PSF" loading="lazy"><br>
 J0 is the Bessel function, wavelength,numerical aperture, which are related with actual setup.</li>
 <li>Apply Poisson noise, accounting for sensor offset.</li>
-<li>Randomly pick 84 * 84 image crops of the 696 * 520 original size image for training, for each patch, has 11 defocus levels.<br>
+<li>Randomly pick 84$\times<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>84</mn><mi>i</mi><mi>m</mi><mi>a</mi><mi>g</mi><mi>e</mi><mi>c</mi><mi>r</mi><mi>o</mi><mi>p</mi><mi>s</mi><mi>o</mi><mi>f</mi><mi>t</mi><mi>h</mi><mi>e</mi><mn>696</mn></mrow><annotation encoding="application/x-tex">84 image crops of the 696</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">8</span><span class="mord">4</span><span class="mord mathdefault">i</span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">e</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">o</span><span class="mord mathdefault">p</span><span class="mord mathdefault">s</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">t</span><span class="mord mathdefault">h</span><span class="mord mathdefault">e</span><span class="mord">6</span><span class="mord">9</span><span class="mord">6</span></span></span></span>\times$520 original size image for training, for each patch, has 11 defocus levels.<br>
 <img src="https://chenli235.github.io/post-images/1585260331255.PNG" alt="good image and defocused image" loading="lazy"></li>
 </ol>
 <p>the neural network model architecture and some of the result<br>
 <a href="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-018-2087-4/MediaObjects/12859_2018_2087_Fig2_HTML.gif?as=webp"></a><br>
 The patch outlines have one of 11 hues denoting the predicted defocus level and increasing lightness denoting increased certainty.</p>
-<p>\times<br>
-\pm \times \div \mid</p>
+<h1 id="results">Results</h1>
+<p><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12859-018-2087-4/MediaObjects/12859_2018_2087_Fig7_HTML.gif?as=webp"></a><br>
+Prediction of absolute focus quality on an unseen cell type (MCF-7 cells, from BBBC021 dataset [12]) and unseen stain, Tubulin, using our Fiji (ImageJ) [20] plugin with pre-trained TensorFlow model. A composite image montage was assembled using the center 84 × 84 patch from a randomly selected batch of 240 images. The border hues denote predicted defocus levels (red for best focus), while the lightness denotes prediction certainty.</p>
+<h1 id="check-the-mouse-brain-image-using-the-imagej-plugin">Check the mouse brain image using the imageJ plugin</h1>
+<figure data-type="image" tabindex="2"><img src="https://chenli235.github.io/post-images/1585268654621.PNG" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
