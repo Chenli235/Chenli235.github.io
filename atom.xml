@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-04-15T14:49:27.844Z</updated>
+    <updated>2020-04-15T21:28:08.529Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/</id>
         <link href="https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/">
         </link>
-        <updated>2020-04-08T04:02:35.000Z</updated>
+        <updated>2020-04-07T16:02:35.000Z</updated>
         <content type="html"><![CDATA[<p>This article is a summary of how to use HPC to train neural network, the sources are coming from the <a href="https://projects.ncsu.edu/hpc/main.php/">offical webiste</a>.</p>
 <h1 id="1-get-access-and-log-into-the-system">1. Get access and log into the system</h1>
 <ol>
@@ -28,8 +28,8 @@ open the software and type <code>apt-get install nano</code>, which is a small e
 <h1 id="2-know-the-important-folder-in-hpc">2. Know the important folder in HPC</h1>
 <ol>
 <li>Home directory, type <code>cd /home/user_name</code>, because each account only have 1 GB quota, so I do not recommend put dataset or project in this folder.</li>
-<li><strong>Scratch directory</strong>, type 'cd /share/group_name' to enter this scratch directory, because it has 10TB of quota, so we put our project  and run projects here. Besides, remember to make your own folder under the directory, <code>mkdir user_name</code>. Because the files will be erased in 30 days, tranfer the data into local michine after training.</li>
-<li>Mass storage directory, type <code>cd /ncsu.volume1/lsmsmart</code> to enter. It has 1TB quota on this directory. It can be used for saving files but it is not connected with compute nodes.</li>
+<li><strong>Scratch directory</strong>, type <code>cd /share/group_name</code>to enter this scratch directory, because it has 10TB of quota, so we put our project  and run projects here. Besides, remember to make your own folder under the directory, <code>mkdir user_name</code>. Because the files will be erased in 30 days, tranfer the data into local michine after training.</li>
+<li>Mass storage directory, type <code>cd /ncsu/volume1/lsmsmart</code> to enter. It has 1TB quota on this directory. It can be used for saving files but it is not connected with compute nodes.</li>
 <li><strong>Directory for user maintained software</strong>, type <code>cd /usr/local/usrapps/group_name</code>. This apace is used to install deeplearning environment, but  I haven't get the space yet. I install the environment under <strong>scartch directory</strong>.</li>
 </ol>
 <h1 id="3-transferring-files">3. Transferring Files</h1>

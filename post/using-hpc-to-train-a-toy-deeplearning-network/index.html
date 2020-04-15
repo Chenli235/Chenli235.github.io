@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586962164935">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586986085973">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1586962164935" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1586986085973" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -98,7 +98,7 @@
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Using HPC to train a toy deeplearning network</h2>
-            <div class="post-date">2020-04-08</div>
+            <div class="post-date">2020-04-07</div>
             
             <div class="post-content" v-pre>
               <p>This article is a summary of how to use HPC to train neural network, the sources are coming from the <a href="https://projects.ncsu.edu/hpc/main.php/">offical webiste</a>.</p>
@@ -113,8 +113,8 @@ open the software and type <code>apt-get install nano</code>, which is a small e
 <h1 id="2-know-the-important-folder-in-hpc">2. Know the important folder in HPC</h1>
 <ol>
 <li>Home directory, type <code>cd /home/user_name</code>, because each account only have 1 GB quota, so I do not recommend put dataset or project in this folder.</li>
-<li><strong>Scratch directory</strong>, type 'cd /share/group_name' to enter this scratch directory, because it has 10TB of quota, so we put our project  and run projects here. Besides, remember to make your own folder under the directory, <code>mkdir user_name</code>. Because the files will be erased in 30 days, tranfer the data into local michine after training.</li>
-<li>Mass storage directory, type <code>cd /ncsu.volume1/lsmsmart</code> to enter. It has 1TB quota on this directory. It can be used for saving files but it is not connected with compute nodes.</li>
+<li><strong>Scratch directory</strong>, type <code>cd /share/group_name</code>to enter this scratch directory, because it has 10TB of quota, so we put our project  and run projects here. Besides, remember to make your own folder under the directory, <code>mkdir user_name</code>. Because the files will be erased in 30 days, tranfer the data into local michine after training.</li>
+<li>Mass storage directory, type <code>cd /ncsu/volume1/lsmsmart</code> to enter. It has 1TB quota on this directory. It can be used for saving files but it is not connected with compute nodes.</li>
 <li><strong>Directory for user maintained software</strong>, type <code>cd /usr/local/usrapps/group_name</code>. This apace is used to install deeplearning environment, but  I haven't get the space yet. I install the environment under <strong>scartch directory</strong>.</li>
 </ol>
 <h1 id="3-transferring-files">3. Transferring Files</h1>
