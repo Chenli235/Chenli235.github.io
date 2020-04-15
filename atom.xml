@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-04-15T07:33:22.298Z</updated>
+    <updated>2020-04-15T14:49:27.844Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/</id>
         <link href="https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/">
         </link>
-        <updated>2020-04-08T16:02:35.000Z</updated>
+        <updated>2020-04-08T04:02:35.000Z</updated>
         <content type="html"><![CDATA[<p>This article is a summary of how to use HPC to train neural network, the sources are coming from the <a href="https://projects.ncsu.edu/hpc/main.php/">offical webiste</a>.</p>
 <h1 id="1-get-access-and-log-into-the-system">1. Get access and log into the system</h1>
 <ol>
@@ -40,8 +40,7 @@ there is the <a href="https://www.youtube.com/watch?v=S8_-mmAZyxQ&amp;feature=yo
 After the transfer is done, for my code, it is under &quot;/share/lsmsmart/cli38/pythonprojects/&quot;,<br>
 <img src="https://chenli235.github.io/post-images/1586929876060.png" alt="" loading="lazy"></p>
 <h1 id="4-loading-and-initializing-conda-and-create-conda-environment">4. Loading and Initializing Conda, and create conda environment</h1>
-<p>This part is illustrated very clearly at the <a href="https://projects.ncsu.edu/hpc/Software/Apps.php?app=Conda">website</a>. Besides, we don't have the user maintained software space. so we need to replace <code>conda create --prefix /usr/local/usrapps/[your_path]/env_ABC AAA BBB CCC</code> with <code>conda create --prefix /share/lsmsmart/unityID/[your_path]/pythonDL-gpu python=3.7</code><br>
-After create the environment, type <code>conda activate /share/lsmsmart/cli38/envs/pythonDL-gpu</code> to activate the environment and install necessary pytorch packages.<br>
+<p>This part is illustrated very clearly at the <a href="https://projects.ncsu.edu/hpc/Software/Apps.php?app=Conda">website</a>.<br>
 For example, type <code>conda install pytorch torchvision cudatoolkit=9.0 -c pytorch</code> to install pytorch gpu environment.</p>
 <h1 id="5-submit-a-batch-job">5. Submit a batch job</h1>
 <p>The cluster is designed to run computationally intensive jobs on compute nodes. Running resource intensive jobs on the login nodes is not permitted. The user must submit a batch script or request an interactive session via the job scheduler.<br>
