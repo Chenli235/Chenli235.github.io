@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chenli235.github.io</id>
     <title>Chen Li</title>
-    <updated>2020-04-15T07:29:24.622Z</updated>
+    <updated>2020-04-15T07:32:28.591Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chenli235.github.io"/>
     <link rel="self" href="https://chenli235.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/</id>
         <link href="https://chenli235.github.io/post/using-hpc-to-train-a-toy-deeplearning-network/">
         </link>
-        <updated>2020-04-09T16:02:35.000Z</updated>
+        <updated>2020-04-09T04:02:35.000Z</updated>
         <content type="html"><![CDATA[<p>This article is a summary of how to use HPC to train neural network, the sources are coming from the <a href="https://projects.ncsu.edu/hpc/main.php/">offical webiste</a>.</p>
 <h1 id="1-get-access-and-log-into-the-system">1. Get access and log into the system</h1>
 <ol>
@@ -66,7 +66,8 @@ conda activate /share/lsmsmart/cli38/envs/pythonDL-gpu
 python train.py
 conda deactivate
 </code></pre>
-<p>-n cores or tasks, for small task, n=1 is enough, for heavy jobs or GPU, we can try -n 8 or -n 16. Sometimes the code will automatically try to use as many as cores possible, and it may slowed down other users, So you should use #BSUB -x for training on GPU. you will get warning if you use it inappropriately. If the status is awalys PEND, delete <code>#BSUB -x</code> or use other GPU.<br>
+<p>-n cores or tasks, for small task, n=1 is enough, for heavy jobs or GPU, we can try -n 8 or -n 16. Sometimes the code will automatically try to use as many as cores possible, and it may slowed down other users, So you should use #BSUB -x for training on GPU. <strong>you will get warning or<br>
+forced termination(maybe) if you use it inappropriately.</strong> If the status is awalys PEND, delete <code>#BSUB -x</code> or use other GPU.<br>
 -w 1:30 set the runtime limit of the job 1 hour 30 minutes . For GPU jobs, the maximum time is 10 days.<br>
 -q gpu means we assign the job to a gpu node.<br>
 -R select[gtx1080] means we use gtx1080 gpu node.<br>
