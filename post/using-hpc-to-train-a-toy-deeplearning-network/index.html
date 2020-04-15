@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586931445760">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586932161753">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1586931445760" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1586932161753" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -110,7 +110,7 @@ open the software and type <code>apt-get install nano</code>, which is a small e
 <li>type <code>ssh unityID@login.hpc.ncsu.edu</code> for logging in.</li>
 <li>learn some basic linux command like pwd, ls, cd, mkdir, cat, less, cp, rm</li>
 </ol>
-<h1 id="2-know-the-important-file-folder-in-hpc">2. Know the important file folder in HPC</h1>
+<h1 id="2-know-the-important-folder-in-hpc">2. Know the important folder in HPC</h1>
 <ol>
 <li>Home directory, type <code>cd /home/user_name</code>, because each account only have 1 GB quota, so I do not recommend put dataset or project in this folder.</li>
 <li><strong>Scratch directory</strong>, type 'cd /share/group_name' to enter this scratch directory, because it has 10TB of quota, so we put our project  and run projects here. Besides, remember to make your own folder under the directory, <code>mkdir user_name</code>. Because the files will be erased in 30 days, tranfer the data into local michine after training.</li>
@@ -119,6 +119,7 @@ open the software and type <code>apt-get install nano</code>, which is a small e
 </ol>
 <h1 id="3-transferring-files">3. Transferring Files</h1>
 <p>we can use SCP or SFTP to transfer files, but I would like to use Globus. Globus is a web based file transfer application that allows resilient, unattended file transfers between two Globus endpoints.<br>
+we should make sure the code can run well on local machine before transferring them.<br>
 there is the <a href="https://www.youtube.com/watch?v=S8_-mmAZyxQ&amp;feature=youtu.be">video Turial</a> about how to use it. The transfer webpage looks like this:<br>
 <img src="https://chenli235.github.io/post-images/1586929146788.png" alt="" loading="lazy"><br>
 After the transfer is done, for my code, it is under &quot;/share/lsmsmart/cli38/pythonprojects/&quot;,<br>
@@ -128,6 +129,25 @@ After the transfer is done, for my code, it is under &quot;/share/lsmsmart/cli38
 After create the environment, type <code>conda activate /share/lsmsmart/cli38/envs/pythonDL-gpu</code> to activate the environment and install necessary pytorch packages.<br>
 For example, type <code>conda install pytorch torchvision cudatoolkit=9.0 -c pytorch</code> to install pytorch gpu environment.</p>
 <h1 id="5-submit-a-batch-job">5. Submit a batch job</h1>
+<p>The cluster is designed to run computationally intensive jobs on compute nodes. Running resource intensive jobs on the login nodes is not permitted. The user must submit a batch script or request an interactive session via the job scheduler.<br>
+I will show a example of batch script for illustration.<br>
+type <code>nano submit.csh</code> under your source code directory.<br>
+type the following content in the submit.csh<br>
+'''<br>
+#!/bin/tcsh<br>
+#BSUB -n 16<br>
+#BSUB -R &quot;span[hosts=1]&quot;<br>
+#BSUB -q<br>
+#BSUB -R select[gtx1080]<br>
+#BSUB -gpu &quot;num=1:mode=shared:mps=yes&quot;</p>
+<p>#BSUB -o out<br>
+#BSUB -e err</p>
+<p>module load conda<br>
+module load cuda/9.0<br>
+conda activate /share/lsmsmart/cli38/envs/pythonDL-gpu<br>
+python train.py<br>
+conda deactivate<br>
+'''</p>
 <h1 id="6-monitor-the-jobs">6. Monitor the jobs</h1>
 <p><code>bjobs</code> can monitor the status of current submitted jobs<br>
 <code>bkill 0</code> or <code>bkill JOBID</code> to kill all or specific job<br>
