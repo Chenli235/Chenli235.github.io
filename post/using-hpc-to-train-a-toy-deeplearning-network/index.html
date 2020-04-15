@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586935427977">
+<link rel="shortcut icon" href="https://chenli235.github.io/favicon.ico?v=1586935759997">
 <link rel="stylesheet" href="https://chenli235.github.io/styles/main.css">
 
 
@@ -35,7 +35,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://chenli235.github.io">
-        <img src="https://chenli235.github.io/images/avatar.png?v=1586935427977" class="site-logo">
+        <img src="https://chenli235.github.io/images/avatar.png?v=1586935759997" class="site-logo">
         <h1 class="site-title">Chen Li</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -98,7 +98,7 @@
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Using HPC to train a toy deeplearning network</h2>
-            <div class="post-date">2020-04-10</div>
+            <div class="post-date">2020-04-09</div>
             
             <div class="post-content" v-pre>
               <p>This article is a summary of how to use HPC to train neural network, the sources are coming from the <a href="https://projects.ncsu.edu/hpc/main.php/">offical webiste</a>.</p>
@@ -151,10 +151,9 @@ conda activate /share/lsmsmart/cli38/envs/pythonDL-gpu
 python train.py
 conda deactivate
 </code></pre>
-<p>-n cores or tasks, for small task, n=1 is enough, for heavy jobs or GPU, we can try -n 8 or -n 16. Sometimes the code will automatically try to use as many as cores possible, and it may slowed down other users.,So you should use #BSUB -x for training on GPU. if the status is awalys PEND, delete <code>#BSUB -x</code><br>
--w set the runtime limit of the job. for GPU jobs, the maximum time is 10 days.</p>
-<ul>
-<li>q gpu means we assign the job to a gpu node.<br>
+<p>-n cores or tasks, for small task, n=1 is enough, for heavy jobs or GPU, we can try -n 8 or -n 16. Sometimes the code will automatically try to use as many as cores possible, and it may slowed down other users, So you should use #BSUB -x for training on GPU. you will get warning if you use it inappropriately. If the status is awalys PEND, delete <code>#BSUB -x</code> or use other GPU.<br>
+-w 1:30 set the runtime limit of the job 1 hour 30 minutes . For GPU jobs, the maximum time is 10 days.<br>
+-q gpu means we assign the job to a gpu node.<br>
 -R select[gtx1080] means we use gtx1080 gpu node.<br>
 -gpu &quot;num=1:mode=shared:mps=yes&quot; is nvidia's multiple process service(mps), only supported by RTX 2080, GTX 1080, P100, K20m<br>
 -x means you use the node exclusively<br>
@@ -162,8 +161,7 @@ conda deactivate
 type <code>bsub &lt; submit.csh</code> to submit job.<br>
 use <code>bpeek</code> to monitor the process of training<br>
 <img src="https://chenli235.github.io/post-images/1586935187216.png" alt="" loading="lazy"><br>
-<strong>Tips: the setup of batch script may be different under different conditions, if the server is busy, we may need to change the environment to use other low performance GPUs.</strong></li>
-</ul>
+<strong>Tips: the setup of batch script may be different under different conditions, if the server is busy, we may need to change the environment to use other low performance GPUs.</strong></p>
 <h1 id="6-monitor-the-jobs">6. Monitor the jobs</h1>
 <p><code>bjobs</code> can monitor the status of current submitted jobs<br>
 <code>bkill 0</code> or <code>bkill JOBID</code> to kill all or specific job<br>
